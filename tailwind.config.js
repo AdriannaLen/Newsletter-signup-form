@@ -6,3 +6,15 @@ module.exports = {
   },
   plugins: [],
 }
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        roboto: ['"roboto"', ...defaultTheme.fontFamily.sans]
+      }
+    }
+  },
+}
